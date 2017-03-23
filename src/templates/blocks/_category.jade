@@ -1,0 +1,14 @@
+mixin b_category(categoryItems)
+	+b.category
+		+e("h2").caption Виберіть категорію
+		+e("ul").list
+			each item in categoryItems
+				+e("li").item
+					+e("a").link(href=item.url)
+						+e("img").img(src=item.image, alt=item.title)
+						+e("span").title= item.title
+
+
+
+
+		

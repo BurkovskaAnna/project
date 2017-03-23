@@ -1,0 +1,34 @@
+---
+title: 'Project'
+preloaderText: 'For better experience we recommend <br /> you to turn on the sound'
+preloaderImg: '/img/promo-bg.png'
+---
+
+extends layouts/_layout
+
+block main
+
+	-
+		categories = [
+			{
+				title: 'Автотранспорт',
+				image: '/img/notebook.png',
+				url: '/'
+			},
+			{
+				title: 'Будівництво, архітектура,землекористування',
+				image: '/img/build.png',
+				url: '/'
+			},
+			{
+				title: 'Громадянство',
+				image: '/img/bag.png',
+				url: '/'
+			},
+			{
+				title: 'Захист прав дитини',
+				image: '/img/bird.png',
+				url: '/'
+			},
+		]
+	+b_category(categories)
